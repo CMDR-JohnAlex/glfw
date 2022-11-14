@@ -14,6 +14,8 @@ Win32
 x64
 Debug
 Release
+[Bb]in/
+[Bb]in-[Ii]nt/
 MinSizeRel
 RelWithDebInfo
 *.opensdf
