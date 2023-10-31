@@ -1,4 +1,4 @@
-project "GLFW"
+project "glfw"
 	kind "StaticLib"
 	language "C"
 
@@ -17,7 +17,7 @@ project "GLFW"
 		"src/vulkan.c",
 		"src/window.c"
 	}
-	
+
 	filter "system:linux"
 		pic "On"
 
