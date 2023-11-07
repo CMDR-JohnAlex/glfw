@@ -2,7 +2,6 @@ project "glfw"
 	kind "StaticLib"
 	language "C"
 	staticruntime "On"
-	systemversion "latest"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -43,6 +42,7 @@ project "glfw"
 		}
 
 	filter "system:windows"
+		systemversion "latest"
 
 		files
 		{
