@@ -17,6 +17,8 @@ Debug
 Release
 MinSizeRel
 RelWithDebInfo
+[Bb]in/
+[Bb]in-[Ii]nt/
 *.opensdf
 
 # Xcode clutter
