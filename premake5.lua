@@ -37,24 +37,22 @@ project "glfw"
 		files
 		{
 			"src/cocoa_init.m",
-            "src/posix_module.c",
+			"src/posix_module.c",
 			"src/cocoa_joystick.m",
 			"src/cocoa_monitor.m",
 			"src/cocoa_time.h",
 			"src/cocoa_time.c",
 			"src/posix_time.c",
 			"src/posix_thread.h",
-            "src/posix_thread.c",
+			"src/posix_thread.c",
 			"src/cocoa_window.m",
-            "src/nsgl_context.m",
+			"src/nsgl_context.m",
 			"src/osmesa_context.c"
-
 		}
 
 		defines
 		{
-			"_GLFW_COCOA",
-			"GLFW_BUILD_COCOA"
+			"_GLFW_COCOA"
 		}
 
 	filter "system:linux"
