@@ -31,6 +31,30 @@ project "glfw"
 		"src/null_joystick.c",
 	}
 
+	filter "system:macosx"
+		pic "On"
+
+		files
+		{
+			"src/cocoa_init.m",
+			"src/posix_module.c",
+			"src/cocoa_joystick.m",
+			"src/cocoa_monitor.m",
+			"src/cocoa_time.h",
+			"src/cocoa_time.c",
+			"src/posix_time.c",
+			"src/posix_thread.h",
+			"src/posix_thread.c",
+			"src/cocoa_window.m",
+			"src/nsgl_context.m",
+			"src/osmesa_context.c"
+		}
+
+		defines
+		{
+			"_GLFW_COCOA"
+		}
+
 	filter "system:linux"
 		pic "On"
 
