@@ -43,12 +43,14 @@ project "glfw"
 			"src/cocoa_time.h",
 			"src/cocoa_time.c",
 			"src/posix_time.c",
+            "src/posix_module.c",
 			"src/cocoa_thread.h",
 			"src/cocoa_thread.c",
+            "src/posix_thread.c",
 			"src/cocoa_window.c",
-			"src/glx_context.c",
-			"src/egl_context.c",
+            "src/nsgl_context.m",
 			"src/osmesa_context.c"
+
 		}
 
 		defines
